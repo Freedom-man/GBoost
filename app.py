@@ -34,7 +34,7 @@ smoke = st.radio("Курите ли Вы ?", options=("Да", "Нет"), key='sm
 alco = st.radio("Злоупоребляете ли Вы алкоголем ?", options=("Да", "Нет"), key='alco')
 active = st.radio("Ведете ли Вы активный образ жизни ?", options=("Да", "Нет"), key='active')
 
-with open('model.pkl', 'rb') as dataset: 
+with open(os.path.dirname(__file__) + 'model.pkl', 'rb') as dataset: 
      model = pickle.load(dataset)
 scaler = pickle.load(open('scaler.pkl','rb'))        
 
