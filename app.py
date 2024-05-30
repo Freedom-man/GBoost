@@ -3,7 +3,6 @@ import pandas as pd
 import pickle
 from pickle import dump, load
 import os
-import xgboost as xgb
 import sklearn
 
 st.title('Рассчитайте вероятность риска развития сердечно-сосудистых заболеваний :broken_heart:')
