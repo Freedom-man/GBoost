@@ -28,8 +28,8 @@ if ap_hi == ap_lo:
 elif ap_hi < ap_lo:
     st.sidebar.warning('Диастолическое давление не может быть меньше систолического', icon="⚠️")    
 gender = st.radio("Пол", options=("М", "Ж"), key='gender')
-gluc = st.radio("Уровень сахара", options=("1", "2", "3"), key='gluc')
-cholesterol = st.radio("Уровень холестерина", options=("1", "2", "3"), key='cholesterol')
+gluc = st.radio("Уровень глюкозы", options=("Норма (4.1 - 5.9 ммоль/л)", "Повышенный (6 - 10 ммоль/л)", "Высокий (> 10 ммоль/л)"), key='gluc')
+cholesterol = st.radio("Уровень холестерина", options=("Норма (< 4 ммоль/л)", "Повышенный (5 - 6.5 ммоль/л)", "Высокий (> 7 ммоль/л)"), key='cholesterol')
 smoke = st.radio("Курите ли Вы ?", options=("Да", "Нет"), key='smoke')
 alco = st.radio("Злоупоребляете ли Вы алкоголем ?", options=("Да", "Нет"), key='alco')
 active = st.radio("Ведете ли Вы активный образ жизни ?", options=("Да", "Нет"), key='active')
